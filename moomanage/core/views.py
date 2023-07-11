@@ -5,3 +5,8 @@ def frontpage(request):
     return render(request,'core/frontpage.html')
 def about(request):
     return render(request,'core/about.html')
+def servicios(request):
+    return render(request,'core/servicios.html')
+
+def empezar(request):
+    return render(request,'core/empezar.html')
