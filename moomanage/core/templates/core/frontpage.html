@@ -1,6 +1,29 @@
+
 {% extends 'core/base.html' %}
 {% block title %}Home | {% endblock %}
 {% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        /* Estilos CSS */
+        .container {
+            overflow: hidden; /* Oculta el contenido que se desborda */
+        }
+    
+        .carousel .carousel-item {
+            display: flex; /* Muestra las imágenes en línea */
+            justify-content: center; /* Centra las imágenes horizontalmente */
+        }
+    </style>
+
+</head>
+<body>
+
+
 <!-- Start Hero Carousel -->
 <section class="section">
     <div class="container">
@@ -62,4 +85,55 @@ bulmaCarousel.attach('#carousel-demo', {
     slidesToShow: 1
 });
 </script>
+
+
+
+<div id='frame42' class='frame42'>
+    <div id='beneficios' class='beneficios'>
+    <img id='image1' class='image1' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB7ZpNqwFRGMf/g0hhR14WNqJ8AyWRlY2V8lLKF7Bha2XtEygpS2VhY2khZSFZUxRlIwtrkXvP1J3m3Nstp9sdD51fTTPnnGbx6zzPPHWeUY7H4x1vgAlvwtuIWCDI/X7HcrlEp9PBer3G5XKBUZhMJrjdbmQyGZRKJdhsNm1NEc2Rfr+PWq1mqMB3FEVBKpVCt9uF3W5X54RCa7/fo9FoPFWCwaJiPB6rIl8IiSwWC5zPZ1BhNBrher2qz0I58l0im82iUqnAKA6HA6rVqjY+nU643W6wWCxiImxL9Xi9XsTjcRjFarX6dU3WEWpwodXr9TAYDLRxoVBAsVjEK8CJ7HY7zGYzbWxk/P8VmSPUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUEDoyNZvN3Hg+n6PZbMIo2FmvHtYv+UJIxO/3c2PW8GHXswiHw7BareqzUGjFYjFEo1FQgDV7yuWyemcIiTgcDrTbbYRCITwTp9OJer2OdDqtzQn3ENl2TiYT9Yx4s9n8aDX8Ny6XC7lcDj6fj5sXFlFf+mys5PN5UELWEWpwoaX/LjOm06nhOaAnGAw+HMKcSCQS4RZZr0TfLzGaZDL5sAi3BYlEAoFAAK8IJ+LxeNBqtdTfJF6NH59fVmRYnRgOh9hut0/NEZHCq8j/tYjxNiIfJdaY9arMDfgAAAAASUVORK5CYII='/>
+    </img>
+    <img id='image2' class='image2' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB7ZpNqwFRGMf/g0hhR14WNqJ8AyWRlY2V8lLKF7Bha2XtEygpS2VhY2khZSFZUxRlIwtrkXvP1J3m3Nstp9sdD51fTTPnnGbx6zzPPHWeUY7H4x1vgAlvwtuIWCDI/X7HcrlEp9PBer3G5XKBUZhMJrjdbmQyGZRKJdhsNm1NEc2Rfr+PWq1mqMB3FEVBKpVCt9uF3W5X54RCa7/fo9FoPFWCwaJiPB6rIl8IiSwWC5zPZ1BhNBrher2qz0I58l0im82iUqnAKA6HA6rVqjY+nU643W6wWCxiImxL9Xi9XsTjcRjFarX6dU3WEWpwodXr9TAYDLRxoVBAsVjEK8CJ7HY7zGYzbWxk/P8VmSPUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUEDoyNZvN3Hg+n6PZbMIo2FmvHtYv+UJIxO/3c2PW8GHXswiHw7BareqzUGjFYjFEo1FQgDV7yuWyemcIiTgcDrTbbYRCITwTp9OJer2OdDqtzQn3ENl2TiYT9Yx4s9n8aDX8Ny6XC7lcDj6fj5sXFlFf+mys5PN5UELWEWpwoaX/LjOm06nhOaAnGAw+HMKcSCQS4RZZr0TfLzGaZDL5sAi3BYlEAoFAAK8IJ+LxeNBqtdTfJF6NH59fVmRYnRgOh9hut0/NEZHCq8j/tYjxNiIfJdaY9arMDfgAAAAASUVORK5CYII='/>
+    </img>
+    <img id='image3' class='image3' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB7ZpNqwFRGMf/g0hhR14WNqJ8AyWRlY2V8lLKF7Bha2XtEygpS2VhY2khZSFZUxRlIwtrkXvP1J3m3Nstp9sdD51fTTPnnGbx6zzPPHWeUY7H4x1vgAlvwtuIWCDI/X7HcrlEp9PBer3G5XKBUZhMJrjdbmQyGZRKJdhsNm1NEc2Rfr+PWq1mqMB3FEVBKpVCt9uF3W5X54RCa7/fo9FoPFWCwaJiPB6rIl8IiSwWC5zPZ1BhNBrher2qz0I58l0im82iUqnAKA6HA6rVqjY+nU643W6wWCxiImxL9Xi9XsTjcRjFarX6dU3WEWpwodXr9TAYDLRxoVBAsVjEK8CJ7HY7zGYzbWxk/P8VmSPUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUEDoyNZvN3Hg+n6PZbMIo2FmvHtYv+UJIxO/3c2PW8GHXswiHw7BareqzUGjFYjFEo1FQgDV7yuWyemcIiTgcDrTbbYRCITwTp9OJer2OdDqtzQn3ENl2TiYT9Yx4s9n8aDX8Ny6XC7lcDj6fj5sXFlFf+mys5PN5UELWEWpwoaX/LjOm06nhOaAnGAw+HMKcSCQS4RZZr0TfLzGaZDL5sAi3BYlEAoFAAK8IJ+LxeNBqtdTfJF6NH59fVmRYnRgOh9hut0/NEZHCq8j/tYjxNiIfJdaY9arMDfgAAAAASUVORK5CYII='/>
+    </img>
+    <img id='image4' class='image4' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB7ZpNqwFRGMf/g0hhR14WNqJ8AyWRlY2V8lLKF7Bha2XtEygpS2VhY2khZSFZUxRlIwtrkXvP1J3m3Nstp9sdD51fTTPnnGbx6zzPPHWeUY7H4x1vgAlvwtuIWCDI/X7HcrlEp9PBer3G5XKBUZhMJrjdbmQyGZRKJdhsNm1NEc2Rfr+PWq1mqMB3FEVBKpVCt9uF3W5X54RCa7/fo9FoPFWCwaJiPB6rIl8IiSwWC5zPZ1BhNBrher2qz0I58l0im82iUqnAKA6HA6rVqjY+nU643W6wWCxiImxL9Xi9XsTjcRjFarX6dU3WEWpwodXr9TAYDLRxoVBAsVjEK8CJ7HY7zGYzbWxk/P8VmSPUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUEDoyNZvN3Hg+n6PZbMIo2FmvHtYv+UJIxO/3c2PW8GHXswiHw7BareqzUGjFYjFEo1FQgDV7yuWyemcIiTgcDrTbbYRCITwTp9OJer2OdDqtzQn3ENl2TiYT9Yx4s9n8aDX8Ny6XC7lcDj6fj5sXFlFf+mys5PN5UELWEWpwoaX/LjOm06nhOaAnGAw+HMKcSCQS4RZZr0TfLzGaZDL5sAi3BYlEAoFAAK8IJ+LxeNBqtdTfJF6NH59fVmRYnRgOh9hut0/NEZHCq8j/tYjxNiIfJdaY9arMDfgAAAAASUVORK5CYII='/>
+    </img>
+    <img id='image5' class='image5' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAzCAYAAADVY1sUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB7ZpNqwFRGMf/g0hhR14WNqJ8AyWRlY2V8lLKF7Bha2XtEygpS2VhY2khZSFZUxRlIwtrkXvP1J3m3Nstp9sdD51fTTPnnGbx6zzPPHWeUY7H4x1vgAlvwtuIWCDI/X7HcrlEp9PBer3G5XKBUZhMJrjdbmQyGZRKJdhsNm1NEc2Rfr+PWq1mqMB3FEVBKpVCt9uF3W5X54RCa7/fo9FoPFWCwaJiPB6rIl8IiSwWC5zPZ1BhNBrher2qz0I58l0im82iUqnAKA6HA6rVqjY+nU643W6wWCxiImxL9Xi9XsTjcRjFarX6dU3WEWpwodXr9TAYDLRxoVBAsVjEK8CJ7HY7zGYzbWxk/P8VmSPUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUkCLUEDoyNZvN3Hg+n6PZbMIo2FmvHtYv+UJIxO/3c2PW8GHXswiHw7BareqzUGjFYjFEo1FQgDV7yuWyemcIiTgcDrTbbYRCITwTp9OJer2OdDqtzQn3ENl2TiYT9Yx4s9n8aDX8Ny6XC7lcDj6fj5sXFlFf+mys5PN5UELWEWpwoaX/LjOm06nhOaAnGAw+HMKcSCQS4RZZr0TfLzGaZDL5sAi3BYlEAoFAAK8IJ+LxeNBqtdTfJF6NH59fVmRYnRgOh9hut0/NEZHCq8j/tYjxNiIfJdaY9arMDfgAAAAASUVORK5CYII='/>
+    </img>
+    <div id='msg1' class='detectarunceloatiempoenbovinospuedetenermuchosbeneficios,incluyendo:'>
+    Detectar un celo a tiempo en bovinos puede tener muchos beneficios, incluyendo:</div>
+    <div id='msg2' class='aumentodelatasadeconcepción:ladeteccióntempranadelcelopermiteunaplanificaciónmásefectivadelainseminaciónomontay,porlotanto,aumentalatasadeconcepción.'>
+    Aumento de la tasa de concepción: la detección temprana del celo permite una planificación más efectiva de la inseminación o monta y, por lo tanto, aumenta la tasa de concepción.
+    </div>
+    <div id='msg3' class='mejoradelagenética:ladeteccióntempranadelcelopermitelaseleccióndelosmejoresmachosparalacruza,loquepuedemejorarlagenéticadeladescendencia.'>
+    Mejora de la genética: la detección temprana del celo permite la selección de los mejores machos para la cruza, lo que puede mejorar la genética de la descendencia.
+    </div>
+    <div id='msg4' class='reduccióndecostos:ladeteccióntempranadelcelopermiteunaplanificaciónmásefectivadeloscostosdemanejodelareproduccióny,porlotanto,puedereducirloscostostotales.'>
+    Reducción de costos: la detección temprana del celo permite una planificación más efectiva de los costos de manejo de la reproducción y, por lo tanto, puede reducir los costos totales.
+    </div>
+    <div id='msg5' class='aumentodelaproductividad:ladeteccióntempranadelcelopermiteunamayorproduccióndedescendenciay,porlotanto,aumentalaproductividaddelaexplotaciónganadera.'>
+    Aumento de la productividad: la detección temprana del celo permite una mayor producción de descendencia y, por lo tanto, aumenta la productividad de la explotación ganadera.
+    </div>
+    <div id='msg6' class='mejoradelasaluddelahembra:ladeteccióntempranadelcelopermiteunaatenciónmásefectivaalahembraduranteelperíododegestacióny,porlotanto,puedemejorarsusalud.'>
+    Mejora de la salud de la hembra: la detección temprana del celo permite una atención más efectiva a la hembra durante el período de gestación y, por lo tanto, puede mejorar su salud.
+    </div>
+    <div id='msg7' class='enresumen,detectarunceloatiempopuedemejorarlaeficiencia,laproductividadylarentabilidaddelaexplotaciónganadera.'>
+    En resumen, detectar un celo a tiempo puede mejorar la eficiencia, la productividad y la rentabilidad de la explotación ganadera.</div>
+    <div id='a7' class='.7'>
+    1.</div>
+    <div id='a8' class='.8'>
+    2.</div>
+    <div id='a9' class='.9'>
+    3.</div>
+    <div id='a10' class='.10'>
+    4.</div>
+    <div id='a11' class='.11'>
+    5.</div>
+    </div>
+    </div>
+
+        
+</body>
+</html>
+
 {% endblock %}
