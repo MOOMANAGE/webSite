@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,9 +25,10 @@ SECRET_KEY = 'django-insecure-#jff7$4x4%%4k)skc_=^zsdmtx1#ph%8i!2cw%s927kqk3h*wz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["snoopbrain.pythonanywhere.com"]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')
 
-STATICFILES_DIRS=['C:/Users/yairc/Downloads/code pagina web/moomanage/static']
+STATICFILES_DIRS=[BASE_DIR / "static",]
 
 
 
