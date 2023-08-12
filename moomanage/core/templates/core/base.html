@@ -1,100 +1,208 @@
-{% load static %}
 <!DOCTYPE html>
-
+{% load static %}
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>{% block title %}{% endblock %}Moomanage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="{% static 'CSS/styleHome.css' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1512, maximum-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CSS/styleAbout.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo6.png' %}">
+    <title>Moomanage</title>
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="photo">
     
-    
+    <script id="anima-hotspots-script" src="hotspots.js"></script>
+    <script id="anima-overrides-script" src="overrides.js"></script>
+    <script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script>
 
+    
     <style>
-        nav.navbar {
-            height: 6rem !important;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
+        /* Estilos CSS */
+        .container {
+            overflow: hidden; /* Oculta el contenido que se desborda */
         }
-
-        /* Agrega estilos personalizados */
-        img.logo {
-            max-height: 5rem;
+    
+        .carousel .carousel-item {
+            display: flex; /* Muestra las imágenes en línea */
+            justify-content: center; /* Centra las imágenes horizontalmente */
         }
-
-        .navbar-item {
-            margin-right: 1rem;
-        }
-
-       
     </style>
+
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="../">
-                    {% load static %}
-                    <!-- Agrega la clase "logo" al elemento img -->
-                    <img class="logo" src="{% static 'images\logo6.png' %}" alt="logo" />
-                </a>
-                <span class="navbar-burger burger" data-target="navbarMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </div>
+<body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="home">
+    <div class="container-center-horizontal">
+        <div class="home auto-animated screen " data-id="1:2" data-page="home"
+            data-screens="iniciar-sesion,registrarse,home,servicios,como-empezar,conocenos,calculadora,como-empezar-parte-2,home-registrado">
+            <div class="rectangle-5-C61RwL" data-id="208:430"></div>
+            <div class="rectangle-6-C61RwL" data-id="208:432"></div>
+            <div class="rectangle-8-C61RwL" data-id="208:435"></div>
+            <div class="moo-manage-C61RwL" data-id="208:444">MooManage</div>
+            <div class="polygon-4-C61RwL" data-id="208:448"></div>
+            <div class="english-united-states-C61RwL" data-id="208:449">English (United States)</div>
+            <div class="line-4-C61RwL" data-id="208:450"></div>
 
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <div class="navbar-item">
+            
+            <div class="deslizador-de-imagenes-C61RwL" data-id="62:133">
+                <div class="x1-9vNSxS" data-id="759:4581"></div>
+                <div class="x11-1-9vNSxS" data-id="1114:6135"></div>
+                <div class="x61-1-9vNSxS" data-id="1114:6138"></div>
+                <div class="x4-9vNSxS" data-id="759:4582"></div>
+                <div class="x5-9vNSxS" data-id="759:4584"></div>
+                <div class="x41-1-9vNSxS" data-id="1114:6143"></div>
+                <div class="x71-1-9vNSxS" data-id="1114:6144"></div>
+                <div class="x10-1-9vNSxS" data-id="1114:6145"></div>
+                <div class="x12-2-9vNSxS" data-id="1114:6146"></div>
+                <div class="x2-1-9vNSxS" data-id="758:3590"></div>
+                <div class="x5-1-9vNSxS" data-id="758:3591"></div>
+                <div class="x4-330844-9vNSxS" data-id="758:3592"></div>
+                <div class="x6-1-9vNSxS" data-id="758:3593"></div>
+                <div class="x7-1-9vNSxS" data-id="758:3594"></div>
+                <div class="x12-1-9vNSxS" data-id="758:3595"></div>
+                <div class="x13-1-9vNSxS" data-id="758:3596"></div>
+                <div class="x8-1-9vNSxS"
+                    onclick="Lib.autoanim_redirect('%2A,home%23calculadora,,ease-out,300.00001192092896', event)"
+                    onmouseover="" data-id="758:3597"></div>
 
-                    </div>
-
-                    <a href="/" class="navbar-item is-active is-size-5 has-text-weight-semibold">
-                        Home
-                    </a>
                     
-                    <a href="{% url 'servicios' %}" class="navbar-item is-size-5 has-text-weight-semibold">
-                        Servicios
-                    </a>
-                    <a href="{% url 'about' %}" class="navbar-item is-size-5 has-text-weight-semibold">
-                        Como Empezar
-                    </a>
-                    <a href="{% url 'about' %}" class="navbar-item is-size-5 has-text-weight-semibold">
-                        Aplicacion móvil
-                    </a>
-                    <a href="{% url 'about' %}" class="navbar-item is-size-5 has-text-weight-semibold">
-                        Conocenos
-                    </a>
-
-
+                   
+                    
+                <div class="x14-1-9vNSxS" data-id="758:3598"></div>
+                
+                
+            </div>
+            <div class="beneficios-C61RwL" data-id="181:408">
+                <div class="image-1-U3GdRx" data-id="183:7"></div>
+                <div class="image-2-U3GdRx" data-id="183:8"></div>
+                <div class="image-3-U3GdRx" data-id="183:9"></div>
+                <div class="image-4-U3GdRx" data-id="183:10"></div>
+                <div class="image-5-U3GdRx" data-id="183:11"></div>
+                <div class="detectar-un-celo-a-t-U3GdRx" data-id="178:47"><span class="span0-GxJKWs">Detectar un celo
+                    </span><span class="span1-GxJKWs">a tiempo</span><span class="span2-GxJKWs"> en bovinos puede tener
+                        muchos </span><span class="span3-GxJKWs">beneficios</span><span class="span4-GxJKWs">,
+                        incluyendo:</span></div>
+                <div class="aumento-de-la-tasa-d-U3GdRx" data-id="179:48"><span class="span0-2dWeMP"><br></span><span
+                        class="span1-2dWeMP">Aumento de la tasa de concepción:</span><span class="span2-2dWeMP"> la
+                    </span><span class="span3-2dWeMP">detección temprana</span><span class="span4-2dWeMP"> del celo
+                        permite una planificación más efectiva de la inseminación o monta y, por lo tanto, </span><span
+                        class="span5-2dWeMP">aumenta la tasa de concepción</span><span class="span6-2dWeMP">.<br></span>
+                </div>
+                <div class="mejora-de-la-gentica-U3GdRx" data-id="179:49"><span class="span0-xhTZNp">Mejora de la
+                        genética:</span><span class="span1-xhTZNp"> la detección temprana del celo permite la selección
+                        de los mejores machos para la cruza, lo que puede </span><span class="span2-xhTZNp">mejorar la
+                        genética de la descendencia.<br></span></div>
+                <div class="reduccin-de-costos-l-U3GdRx" data-id="179:50"><span class="span0-5b43Gv">Reducción de
+                        costos:</span><span class="span1-5b43Gv"> la detección temprana del celo permite una
+                        planificación más efectiva de los </span><span class="span2-5b43Gv">costos de manejo de la
+                        reproducción</span><span class="span3-5b43Gv">&nbsp;</span><span class="span4-5b43Gv">y, por lo
+                        tanto, puede </span><span class="span5-5b43Gv">reducir los costos totales.<br></span></div>
+                <div class="aumento-de-la-produc-U3GdRx" data-id="179:51"><span class="span0-6tKD5W">Aumento de la
+                        productividad:</span><span class="span1-6tKD5W"> la detección temprana del celo permite una
+                    </span><span class="span2-6tKD5W">mayor producción de descendencia</span><span class="span3-6tKD5W">
+                        y, por lo tanto, </span><span class="span4-6tKD5W">aumenta la productividad de la explotación
+                        ganadera.<br></span></div>
+                <div class="mejora-de-la-salud-d-U3GdRx" data-id="179:52"><span class="span0-VaKf1J">Mejora de la salud
+                        de la hembra:</span><span class="span1-VaKf1J"> la detección temprana del celo permite
+                        una</span><span class="span2-VaKf1J"> atención más efectiva a la hembra</span><span
+                        class="span3-VaKf1J"> durante el período de gestación y, por lo tanto, puede </span><span
+                        class="span4-VaKf1J">mejorar su salud.<br></span></div>
+                <div class="en-resumen-detectar-U3GdRx" data-id="179:53">En resumen, detectar un celo a tiempo puede
+                    mejorar la eficiencia, la productividad y la rentabilidad de la explotación ganadera.</div>
+                <div class="x1-U3GdRx" data-id="181:55">1.</div>
+                <div class="x2-U3GdRx" data-id="181:56">2.</div>
+                <div class="x3-U3GdRx" data-id="181:57">3.</div>
+                <div class="x4-U3GdRx" data-id="181:58">4.</div>
+                <div class="x5-U3GdRx" data-id="181:59">5.</div>
+            </div>
+            <div class="barra-de-navegacion-C61RwL" data-id="671:4851">
+                <div class="espana-1-1-JINcdj" data-id="17:27"></div>
+                <div class="ordenar-abajo-1-JINcdj" data-id="17:46"></div>
+                <div class="servicios-JINcdj"
+                    onclick="Lib.autoanim_redirect('home,home%23servicios,,ease-out,300.00001192092896;servicios,home%23servicios,,ease-out,300.00001192092896;como-empezar,home%23servicios,,ease-out,300.00001192092896;conocenos,home%23servicios,,ease-out,300.00001192092896;calculadora,home%23servicios,,ease-out,300.00001192092896;como-empezar-parte-2,home%23servicios,,ease-out,300.00001192092896;home-registrado,home%23servicios,,ease-out,300.00001192092896;%2A,home%23servicios,,ease-out,300.00001192092896', event)"
+                    onmouseover="" data-id="17:19">Servicios</div>
+                <div class="como-empezar-JINcdj"
+                    onclick="Lib.autoanim_redirect('home,home%23como-empezar,,ease-out,300.00001192092896;servicios,home%23como-empezar,,ease-out,300.00001192092896;como-empezar,home%23como-empezar,,ease-out,300.00001192092896;conocenos,home%23como-empezar,,ease-out,300.00001192092896;calculadora,home%23como-empezar,,ease-out,300.00001192092896;como-empezar-parte-2,home%23como-empezar,,ease-out,300.00001192092896;home-registrado,home%23como-empezar,,ease-out,300.00001192092896', event)"
+                    onmouseover="" data-id="17:20">Como Empezar</div>
+                <div class="aplicacin-mvil-JINcdj"
+                    onclick="Lib.autoanim_redirect('home,home%23como-empezar,,ease-out,300.00001192092896;servicios,home%23como-empezar,,ease-out,300.00001192092896;como-empezar,home%23como-empezar,,ease-out,300.00001192092896;conocenos,home%23como-empezar,,ease-out,300.00001192092896;calculadora,home%23como-empezar,,ease-out,300.00001192092896;como-empezar-parte-2,home%23como-empezar,,ease-out,300.00001192092896;home-registrado,home%23como-empezar,,ease-out,300.00001192092896', event)"
+                    onmouseover="" data-id="505:202">Aplicación móvil</div>
+                <div class="concenos-JINcdj"
+                    onclick="Lib.autoanim_redirect('home,home%23conocenos,,ease-out,300.00001192092896;servicios,home%23conocenos,,ease-out,300.00001192092896;como-empezar,home%23conocenos,,ease-out,300.00001192092896;conocenos,home%23conocenos,,ease-out,300.00001192092896;calculadora,home%23conocenos,,ease-out,300.00001192092896;como-empezar-parte-2,home%23conocenos,,ease-out,300.00001192092896;home-registrado,home%23conocenos,,ease-out,300.00001192092896', event)"
+                    onmouseover="" data-id="17:23">Conócenos</div>
+                <div class="login-signup-JINcdj"
+                    onclick="Lib.autoanim_redirect('home,home%23registrarse,,ease-out,300.00001192092896;servicios,home%23registrarse,,ease-out,300.00001192092896;como-empezar,home%23registrarse,,ease-out,300.00001192092896;conocenos,home%23registrarse,,ease-out,300.00001192092896;calculadora,home%23registrarse,,ease-out,300.00001192092896;como-empezar-parte-2,home%23registrarse,,ease-out,300.00001192092896', event)"
+                    onmouseover="" data-id="17:14">
+                    <div class="iniciar-sesion-eVYCac"
+                        onclick="Lib.autoanim_redirect('home,home%23home-registrado,,,', event)" onmouseover=""
+                        data-id="17:15">Iniciar Sesion</div>
+                    <div class="signup-eVYCac" data-id="17:16">
+                        <div class="rectangle-89-L78J8q" data-id="17:17"></div>
+                        <div class="inscribirse-L78J8q" data-id="17:18">Inscribirse</div>
+                    </div>
+                </div>
+                <div class="carrito-de-compras-1-JINcdj" data-id="17:91"></div>
+                <div class="minimalist-flower-logo-2-JINcdj"
+                    onclick="Lib.autoanim_redirect('servicios,home%23home,,,;como-empezar,home%23home,,,;conocenos,home%23home,,,;como-empezar-parte-2,home%23home,,,', event)"
+                    onmouseover="" data-id="600:128"></div>
+                <div class="vector-1-JINcdj" data-id="597:126"></div>
+                <div class="esp-JINcdj" data-id="623:124">esp</div>
+            </div>
+            <div class="app-movil-C61RwL" data-id="633:174"></div>
+            <div class="testimonios-C61RwL" data-id="669:4749">
+                <div class="rectangle-1271-vKgHsL" data-id="669:4750"></div>
+                <div class="conoce-las-experienc-vKgHsL valign-text-middle" data-id="669:4751">¡Conoce las experiencias
+                    de nuestros clientes!</div>
+                <div class="testimonial-vKgHsL" data-id="669:4752">
+                    <div class="buyer-buzz-partner-n-D7KGUx" data-id="I669:4752;61:440">“el sensor de celo y la
+                        aplicación móvil han sido una gran inversión para mi negocio ganadero. Me han permitido ahorrar
+                        tiempo, reducir costos y mejorar la eficiencia de mi ganadería”</div>
+                </div>
+                <div class="author-vKgHsL" data-id="669:4786">
+                    <div class="albus-dumbledore-cmuKyx valign-text-middle" data-id="669:4787">Albus Dumbledore</div>
+                    <div class="manager-howarts-cmuKyx valign-text-middle" data-id="669:4788">Manager @ Howarts</div>
+                    <div class="ellipse-4-cmuKyx" data-id="669:4789"></div>
+                </div>
+                <div class="group-237-vKgHsL" data-id="671:4795">
+                    <div class="testimonial-BexSDK" data-id="669:4753">
+                        <div class="buyer-buzz-partner-n-pr0wrw" data-id="I669:4753;61:440">“me ha sido de gran ayuda
+                            para mi negocio, gracias a su precisión y facilidad de uso he podido mejorar la reproducción
+                            de mis vacas y aumentar la productividad en mi ganadería..”</div>
+                        <div class="author-pr0wrw" data-id="I669:4753;61:445"></div>
+                    </div>
+                    <div class="ellipse-4-BexSDK" data-id="669:4792"></div>
+                    <div class="team-leader-gryffindor-BexSDK valign-text-middle" data-id="669:4791">Team Leader @
+                        Gryffindor</div>
+                    <div class="harry-potter-BexSDK valign-text-middle" data-id="669:4790">Harry Potter</div>
+                </div>
+                <div class="testimonial-62OUyg" data-id="669:4754">
+                    <div class="buyer-buzz-partner-n-aDE7ji" data-id="I669:4754;61:440">“Recomendaría este producto a
+                        cualquier otro productor que busque mejorar su manejo reproductivo de bovinos.”</div>
+                    <div class="author-aDE7ji" data-id="I669:4754;61:445">
+                        <div class="albus-dumbledore-RxpMQX valign-text-middle" data-id="I669:4754;61:442">Severus Snape
+                        </div>
+                        <div class="manager-howarts-RxpMQX valign-text-middle" data-id="I669:4754;61:443">Manager @
+                            Slytherin</div>
+                        <div class="ellipse-4-RxpMQX" data-id="I669:4754;61:441"></div>
+                    </div>
+                </div>
+                <div class="group-235-vKgHsL" data-id="669:4755">
+                    <div class="group-234-qry0yP" data-id="669:4756">
+                        <div class="group-232-tC6Fm7" data-id="669:4757">
+                            <div class="ellipse-5-Lb8fDY" data-id="669:4758"></div>
+                            <div class="arrow-right-Lb8fDY" data-id="669:4759"></div>
+                        </div>
+                        <div class="group-233-tC6Fm7" data-id="669:4762">
+                            <div class="ellipse-5-PxEiqV" data-id="669:4763"></div>
+                            <div class="arrow-right-PxEiqV" data-id="669:4764"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <section class="section">
-        <div class="container">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="content has-text-centered">
-                <div class="rectangle" data-id="181:406"></div>
-                
+            <footer class="footer-C61RwL" data-id="181:407">
+                <div class="rectangle-90-iPe1yZ" data-id="181:406"></div>
                 <div class="tm-iPe1yZ" data-id="181:331"></div>
                 <div class="copyrigh-iPe1yZ" data-id="181:332"><a href="mailto:info@celotor.com" target="_blank"><span
-                            class="span0-RxnBVD">moomanage0@gmail.com</span></a><span class="span1-RxnBVD"> | Copyright ©
+                            class="span0-RxnBVD">info@MOOMANAGE.com</span></a><span class="span1-RxnBVD"> | Copyright ©
                         2023&nbsp;&nbsp;| Medellín - Colombia</span></div>
                 <div class="container-iPe1yZ" data-id="181:333">
                     <div class="col-1-AbjtwI" data-id="181:334">
@@ -115,7 +223,7 @@
                             <div class="sobre-nosotros-ixAri4" data-id="181:345">sobre nosotros</div>
                             <div class="contacto-ixAri4" data-id="181:348">contacto</div>
                         </div>
-                        
+                        <div class="empresa-JA1hxc" data-id="757:3286">Empresa</div>
                     </div>
                     <div class="col-3-AbjtwI" data-id="181:350">
                         <div class="support-41jhRS" data-id="181:351">Support</div>
@@ -133,46 +241,433 @@
                             <div class="instagram-d5xw72" data-id="181:364">Instagram</div>
                             <div class="linked-in-d5xw72" data-id="181:365">LinkedIn</div>
                         </div>
-                        
+                        <div class="sguenos-vxgY4Z" data-id="757:3297">Síguenos</div>
                     </div>
                 </div>
+                <div class="minimalist_-flower_-iPe1yZ" data-id="816:4868"></div>
+            </footer>
+            <div class="enviar-correo-C61RwL" data-id="671:4850"></div>
+            <div class="rectangle-1-C61RwL" data-id="181:63"></div>
+            <div class="text-C61RwL" data-id="181:95"></div>
+
+            <h1 class="title-C61RwL" data-id="188:223">Que hacemos?</h1>
+            <div class="rectangle-119-C61RwL"
+                onclick="Lib.autoanim_redirect('como-empezar,home%23como-empezar-parte-2,,ease-out,300.00001192092896', event)"
+                onmouseover="" data-id="204:235"></div>
+            <div class="saltar-1-C61RwL" data-id="204:234"></div>
+            <div class="continua-leyendo-C61RwL" data-id="204:237">Continua leyendo</div>
+            <div class="minimalist_-flower_-C61RwL" data-id="789:5145"></div>
+            <div class="verification-details-C61RwL" data-id="208:429">Verification details</div>
+            <div class="identification-details-C61RwL" data-id="208:431">Identification details*</div>
+            <div class="place-of-work-C61RwL" data-id="208:433">Place of work</div>
+            <div class="identification-number-C61RwL" data-id="208:434">Identification number</div>
+            <div class="rectangle-14-C61RwL" onclick="Lib.autoanim_redirect('%2A,home%23home-registrado,,,', event)"
+                onmouseover="" data-id="208:436"></div>
+            <div class="rectangle-15-C61RwL"
+                onclick="Lib.autoanim_redirect('%2A,home%23registrarse,,ease-out,300.00001192092896', event)"
+                onmouseover="" data-id="208:437"></div>
+            <div class="place-of-work-VMr6Om" data-id="208:438">Place of Work *</div>
+            <div class="back-to-registration-C61RwL" data-id="208:439">Back to Registration</div>
+            <div class="done-C61RwL" data-id="208:440">Done</div>
+            <div class="skip-C61RwL" data-id="208:441">Skip</div>
+            <div class="specilization-C61RwL" data-id="208:442">Specilization*</div>
+            <div class="specilization-VMr6Om" data-id="208:443">Specilization</div>
+            <div class="help-C61RwL" data-id="208:445">Help</div>
+            <div class="privacy-C61RwL" data-id="208:446">Privacy</div>
+            <div class="terms-C61RwL" data-id="208:447">Terms</div>
+            <div class="burgundy-veterinarian-1-C61RwL" data-id="208:514"></div>
+            <div class="x4330843-1-C61RwL" data-id="208:368"></div>
+            <div class="registrate-a-moo-manage-C61RwL" data-id="208:369">Registrate a&nbsp;&nbsp;MooManage</div>
+            <div class="rectangle-2-C61RwL"
+                onclick="Lib.autoanim_redirect('%2A,home%23iniciar-sesion,,ease-out,300.00001192092896', event)"
+                onmouseover="" data-id="208:370"></div>
+            <div class="line-1-C61RwL" data-id="208:372"></div>
+            <div class="line-2-C61RwL" data-id="208:373"></div>
+            <div class="or-C61RwL" data-id="208:374">Or</div>
+            <div class="rectangle-4-C61RwL" data-id="208:375"></div>
+            <div class="nombre-C61RwL" data-id="208:377">Nombre*</div>
+            <div class="peter-C61RwL" data-id="208:378">peter</div>
+            <div class="doe-C61RwL" data-id="208:379">Doe</div>
+            <div class="apellido-C61RwL" data-id="208:380">Apellido*</div>
+            <div class="johndoeexamplecom-C61RwL" data-id="208:382">john.doe@example.com</div>
+            <div class="rectangle-10-C61RwL" data-id="208:383"></div>
+            <div class="x8-characters-C61RwL" data-id="208:384">8+ characters</div>
+            <div class="rectangle-9-C61RwL" data-id="208:386"></div>
+            <div class="rectangle-7-C61RwL" data-id="208:387"></div>
+            <div class="rectangle-11-C61RwL" data-id="208:388"></div>
+            <div class="rectangle-13-C61RwL"
+                onclick="Lib.autoanim_redirect('%2A,home%23iniciar-sesion,,ease-out,300.00001192092896', event)"
+                onmouseover="" data-id="208:389"></div>
+            <div class="email-C61RwL" data-id="208:390">Email*</div>
+            <div class="contrasea-C61RwL" data-id="208:391">Contraseña*</div>
+            <div class="crear-cuenta-C61RwL" data-id="208:392">Crear cuenta</div>
+            <div class="genero-C61RwL" data-id="208:393">Genero*</div>
+            <div class="celular-C61RwL" data-id="208:394">Celular*</div>
+            <div class="confirma-contrasea-C61RwL" data-id="208:395">Confirma Contraseña*</div>
+            <div class="profesin-C61RwL" data-id="208:396">Profesión*</div>
+            <div class="polygon-1-C61RwL" data-id="208:397"></div>
+            <div class="polygon-2-C61RwL" data-id="208:398"></div>
+            <div class="seleccin-C61RwL" data-id="208:399">Selección</div>
+            <div class="seleccin-VMr6Om" data-id="208:400">Selección</div>
+            <div class="password123-C61RwL" data-id="208:401">Password@123</div>
+            <div class="creando-una-cuenta-s-C61RwL" data-id="208:402"><span class="span0-84WHAX">Creando una cuenta
+                    significa que estas de acuerdo con nuestros </span><span class="span1-84WHAX">términos de
+                    servicios</span><span class="span2-84WHAX">, </span><span class="span3-84WHAX">políticas</span><span
+                    class="span4-84WHAX">&nbsp;</span><span class="span5-84WHAX">de privacidad</span><span
+                    class="span6-84WHAX">, y nuestra </span><span class="span7-84WHAX">configuración de notificación
+                    predeterminada.</span></div>
+            <div class="rectangle-12-C61RwL" data-id="208:404"></div>
+            <div class="line-3-C61RwL" data-id="208:405"></div>
+            <div class="x57-C61RwL" data-id="208:406">+57</div>
+            <div class="x0123456789-C61RwL" data-id="208:407">0123456789</div>
+            <div class="x2edb1dd1031522adf18185634af8560b-1-C61RwL" data-id="208:408"></div>
+            <div class="ingresa-con-google-C61RwL" data-id="208:409">Ingresa con Google</div>
+            <div class="signup-with-facebook-C61RwL" data-id="208:410">Signup with Facebook</div>
+            <div class="ya-eres-un-miembro-inicia-sesin-C61RwL" data-id="208:411"><span class="span0-bxHzkw">Ya eres un
+                    miembro?</span><span class="span1-bxHzkw">&nbsp;</span><span class="span2-bxHzkw">Inicia
+                    sesión</span></div>
+            <div class="ayuda-C61RwL" data-id="208:412">Ayuda</div>
+            <div class="privacidad-C61RwL" data-id="208:413">Privacidad</div>
+            <div class="trminos-C61RwL" data-id="208:414">Términos</div>
+            <div class="ellipse-1-C61RwL" data-id="208:417"></div>
+            <div class="x-C61RwL" data-id="208:418">!</div>
+            <div class="ingresa-un-nombre-valido-C61RwL" data-id="208:419">ingresa un nombre valido</div>
+            <div class="show-password-icon-3-1-C61RwL" data-id="208:420"></div>
+            <div class="digital-nomad-1-C61RwL" data-id="208:422"></div>
+            <div class="people-debating-2-1-C61RwL" data-id="208:423"></div>
+            <div class="taxi-bull-2021-1-C61RwL" data-id="208:511"></div>
+            <div class="monoto_2-logo-1-C61RwL" data-id="208:425"></div>
+            <div class="minimalist-flower-logo-3-C61RwL" onclick="Lib.autoanim_redirect('%2A,home%23home,,,', event)"
+                onmouseover="" data-id="758:3433"></div>
+            <div class="background-C61RwL" data-id="188:169"></div>
+            <div class="text-content-C61RwL" data-id="188:221">
+                <div class="text-wrapper-ydCJzl" data-id="188:222"></div>
             </div>
-            <div class="minimalist_-flower_-iPe1yZ" data-id="816:4868"></div>
+            <div class="description-C61RwL" data-id="188:224">Somo una solución innovadora para la detección del celo a
+                tiempo y la generación de alertas las 24h del día, basada en el uso de tecnología e internet de las
+                cosas (IoT) que permite el manejo eficiente de la reproducción de ganado. Con nuestro compromiso por la
+                calidad y el bienestar animal, trabajamos para transformar la industria ganadera y hacerla más
+                sostenible y rentable para todos los actores involucrados. ¡Únete a nosotros y descubre cómo podemos
+                mejorar juntos la producción de tu ganadería!</div>
+            <div class="subtitle-C61RwL" data-id="188:225"><span class="span0-lx56bz">Nuestros servicios</span><span
+                    class="span1-lx56bz"> ⭐ </span></div>
+            <div class="minimalist_-flower_-VMr6Om" data-id="789:5115"></div>
+            <div class="carta-producto-C61RwL" data-id="1100:5440">
+                <div class="cards-9kBsuG" data-id="I1100:5440;1100:5413">
+                    <div class="card-background-x78IDq" data-id="I1100:5440;1100:5414"></div>
+                    <div class="content-x78IDq" data-id="I1100:5440;1100:5415">
+                        <div class="icon-XmU0mF" data-id="I1100:5440;1100:5416">
+                            <div class="icon-background-fMseoa" data-id="I1100:5440;1100:5417"></div>
+                            <div class="group-2-fMseoa" data-id="I1100:5440;1100:5418"></div>
+                        </div>
+                        <div class="text-XmU0mF" data-id="I1100:5440;1100:5422"></div>
+                    </div>
+                    <div class="productos-x78IDq" data-id="I1100:5440;1100:5423">Productos</div>
+                </div>
+                <div class="conoce-los-productos-9kBsuG" data-id="I1100:5440;1100:5424">conoce los productos y servicios
+                    relacionados con el manejo eficiente de la detección del celo.</div>
+            </div>
+            <div class="carta-calculadora-C61RwL" data-id="1100:5547">
+                <div class="grid-6HiVJI" data-id="I1100:5547;188:170">
+                    <div class="cards-shJXlD" data-id="I1100:5547;188:186">
+                        <div class="card-background-PKBXcT"
+                            onclick="Lib.autoanim_redirect('%2A,home%23calculadora,,,', event)" onmouseover=""
+                            data-id="I1100:5547;188:187"></div>
+                        <div class="card-content-PKBXcT" data-id="I1100:5547;188:188">
+                            <div class="content-p5NaqU" data-id="I1100:5547;188:189">
+                                <div class="icon-GnYxfS" data-id="I1100:5547;188:190">
+                                    <div class="icon-background-iT7T7F" data-id="I1100:5547;188:191"></div>
+                                    <div class="group-3-iT7T7F" data-id="I1100:5547;188:192"></div>
+                                </div>
+                                <div class="text-GnYxfS" data-id="I1100:5547;188:195"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="utilice-nuestra-calc-6HiVJI" data-id="I1100:5547;191:46">Utilice nuestra calculadora de
+                    costo para tener una idea de la cantidad de dinero que puede ahorrar por mejorar la detección del
+                    celo.</div>
+                <div class="calculadora-6HiVJI" data-id="I1100:5547;188:234">Calculadora</div>
+            </div>
+            <div class="carta-como-empezar-C61RwL" data-id="1100:5561">
+                <div class="card-featured-1ar5SK" data-id="I1100:5561;188:171">
+                    <div class="card-background-lqpAZa" data-id="I1100:5561;188:172"></div>
+                    <div class="card-content-lqpAZa" data-id="I1100:5561;188:173">
+                        <div class="content-HxkcMu" data-id="I1100:5561;188:174">
+                            <div class="icon-xCFW3p" data-id="I1100:5561;188:175">
+                                <div class="icon-background-6vRjng" data-id="I1100:5561;188:176"></div>
+                                <div class="icon-6vRjng" data-id="I1100:5561;188:177"></div>
+                            </div>
+                            <div class="text-xCFW3p" data-id="I1100:5561;188:183"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entiende-porqu-es-im-1ar5SK" data-id="I1100:5561;189:6">Entiende porqué es importante
+                    detectar el celo a tiempo y conoce el paso a paso del funcionamiento de Moomanage</div>
+                <div class="title-1ar5SK" data-id="I1100:5561;188:236">Como Empezar</div>
+            </div>
+            <div class="carta-asesoramiento-C61RwL" data-id="1100:5577">
+                <div class="cards-JHxO3j" data-id="I1100:5577;188:210">
+                    <div class="card-background-X4xlzs" data-id="I1100:5577;188:211"></div>
+                    <div class="title-X4xlzs" data-id="I1100:5577;189:14">Aseroramiento</div>
+                    <div class="content-X4xlzs" data-id="I1100:5577;188:212">
+                        <div class="icon-X0h9pK" data-id="I1100:5577;188:213">
+                            <div class="icon-background-P2rmwp" data-id="I1100:5577;188:214"></div>
+                            <div class="group-1-P2rmwp" data-id="I1100:5577;188:215"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="te-acompaamos-en-tu-JHxO3j" data-id="I1100:5577;189:16">Te Acompañamos en tu proceso, te
+                    respondemos cualquier pregunta, y te damos mayor información sobre el uso, instalación y
+                    configuración.</div>
+            </div>
+            <div class="rectangle-92-C61RwL" data-id="193:166"></div>
+            <div class="rectangle-97-C61RwL" data-id="193:177"></div>
+            <div class="rectangle-100-C61RwL" data-id="193:182"></div>
+            <div class="rectangle-109-C61RwL" data-id="194:216"></div>
+            <div class="rectangle-116-C61RwL" data-id="204:229"></div>
+            <div class="rectangle-112-C61RwL" data-id="194:221"></div>
+            <div class="rectangle-94-C61RwL" data-id="193:172"></div>
+            <div class="rectangle-91-C61RwL" data-id="193:164"></div>
+            <div class="rectangle-98-C61RwL" data-id="193:178"></div>
+            <div class="este-sistema-de-sens-C61RwL" data-id="194:201">Este sistema de sensores es resistente frente a
+                falsas detecciones, como lluvias, objetos y otros animales pequeños que se monten encima del sensor.
+            </div>
+            <div class="en-resumen-un-proyec-C61RwL" data-id="194:203">En resumen, un proyecto de sensores para detectar
+                la montura y el celo es una herramienta valiosa para los ganaderos que buscan mejorar la eficiencia y la
+                rentabilidad de su negocio.</div>
+            <div class="rectangle-101-C61RwL" data-id="193:183"></div>
+            <div class="rectangle-110-C61RwL" data-id="194:217"></div>
+            <div class="rectangle-117-C61RwL" data-id="204:230"></div>
+            <div class="rectangle-113-C61RwL" data-id="194:222"></div>
+            <div class="rectangle-95-C61RwL" data-id="193:173"></div>
+            <div class="rectangle-93-C61RwL" data-id="193:168"></div>
+            <div class="rectangle-99-C61RwL" data-id="193:179"></div>
+            <div class="rectangle-102-C61RwL" data-id="193:184"></div>
+            <div class="rectangle-111-C61RwL" data-id="194:218"></div>
+            <div class="rectangle-118-C61RwL" data-id="204:231"></div>
+            <div class="rectangle-114-C61RwL" data-id="194:223"></div>
+            <div class="rectangle-96-C61RwL" data-id="193:174"></div>
+            <div class="por-que-es-important-C61RwL" data-id="193:167">¿Por que es importante detectar el celo a tiempo?
+            </div>
+            <div class="qu-es-un-proyecto-de-C61RwL" data-id="193:180">¿Qué es un proyecto de sensores para detectar la
+                montura y el celo?</div>
+            <div class="aumento-de-la-tasa-de-concepcin-C61RwL" data-id="193:185">Aumento de la tasa de concepción</div>
+            <div class="mejora-de-la-gentica-C61RwL" data-id="194:219">Mejora de la genética</div>
+            <div class="aumento-de-la-produc-C61RwL" data-id="204:232">Aumento de la productividad Y Mejora de la salud
+                de la hembra</div>
+            <div class="reduccin-de-costos-C61RwL" data-id="194:224">Reducción de costos</div>
+            <div class="qu-es-la-deteccin-te-C61RwL" data-id="193:175">¿Qué es la detección temprana del celo en vacas?
+            </div>
+            <div class="mejora-la-eficiencia-C61RwL" data-id="193:171">Mejora la eficiencia reproductiva: La detección
+                temprana del celo permite una mejor planificación y una gestión más eficiente en la reproducción
+                <br>Maximiza la producción de leche y carne<br>Reducción de costos:&nbsp;&nbsp;reduce los costos
+                asociados con la utilización de toros o técnicas de inseminación artificial.<br>Mejora de la calidad de
+                la cría<br>mejora la salud te vacas
+            </div>
+            <div class="un-proyecto-de-senso-C61RwL" data-id="193:181">Un proyecto de sensores para detectar la montura
+                y el celo es una solución tecnológica diseñada para ayudar a los ganaderos a gestionar su programa de
+                reproducción de manera más eficiente. Estos sensores se colocan en las vacas para detectar cuándo otras
+                vacas o toros se montan encima de ellas. Si una vaca se deja montar por varios segundos, se toma un
+                registro de la montada y, si este proceso se repite varias veces en un día, se envía una alerta a los
+                dispositivos conectados vía Wi-Fi sobre la vaca en celo.</div>
+            <div class="detectar-el-celo-a-t-C61RwL" data-id="193:186">Detectar el celo a tiempo permite al ganadero
+                programar el apareamiento en el momento adecuado, lo que aumenta las posibilidades de concepción y
+                reduce el tiempo necesario para lograr un embarazo.</div>
+            <div class="al-programar-el-apar-C61RwL" data-id="194:220">Al programar el apareamiento en el momento
+                adecuado, se puede asegurar la selección del mejor toro para la hembra en celo, lo que contribuye a
+                mejorar la genética de la cría.</div>
+            <div class="la-deteccin-temprana-C61RwL" data-id="204:233"> La detección temprana del celo permite a los
+                ganaderos aumentar la frecuencia de apareamiento, lo que aumenta la tasa de concepción y la producción
+                de leche y carne.&nbsp;&nbsp;Se mejora la salud de la hembra<br>evitando el uso de hormonas y otros
+                tratamientos costosos para estimular el celo. Además, la hembra mejora su salud&nbsp;&nbsp;al evitar el
+                estrés y la fatiga asociados con la detección tardía del celo.</div>
+            <div class="la-deteccin-temprana-VMr6Om" data-id="194:225">La detección temprana del celo permite a los
+                ganaderos programar el apareamiento en el momento adecuado, evitando el uso innecesario de hormonas y
+                otros tratamientos costosos para estimular el celo.<br>Costos de apareamiento: se puede evitar el uso de
+                toros costosos que no sean necesarios.<br>Costos de alimentación: la alimentación adecuada para la
+                hembra en celo, evitando sobrealimentación o subalimentación.<br>Costos de atención
+                veterinaria<br>Costos de mano de obra:&nbsp;&nbsp;reduciendo la necesidad de trabajar en horas extras o
+                en días festivos.<br>En resumen, la detección temprana del celo puede ayudar a reducir una amplia gama
+                de costos, mejorando la eficiencia y la rentabilidad de la ganadería.<br><br>CALCULA AHORA MISMO LOS
+                COSTOS POR PERDER UN CELO A TIEMPO CON NUESTRA CALCULADORA</div>
+            <div class="ventajas-de-la-detec-C61RwL" data-id="194:210"> Ventajas de la detección temprana del celo</div>
+            <div class="la-deteccin-temprana-mzXdH9" data-id="193:176">La detección temprana del celo en vacas es un
+                proceso que permite identificar el momento en que una vaca está en celo, es decir, cuando está
+                disponible para ser fecundada. Este proceso es importante porque permite a los ganaderos planificar y
+                optimizar el apareamiento, lo que aumenta la tasa de concepción y mejora la genética de la población.
+                <br>La detección temprana del celo puede ser realizada manualmente o mediante el uso de tecnologías,
+                como sensores de montura o análisis de comportamiento, para automatizar y optimizar el proceso.
+            </div>
+            <div class="vaca-1-C61RwL" data-id="193:197"></div>
+            <div class="vaca-1-1-C61RwL" data-id="193:198"></div>
+            <div class="granja-1-C61RwL" data-id="194:199"></div>
+            <div class="vaca-2-1-C61RwL" data-id="194:200"></div>
+            <div class="cow-uwu-1-C61RwL" data-id="17:90"></div>
+            <div class="vaca-3-1-C61RwL" data-id="194:207"></div>
+            <div class="sensor-de-movimiento-1-C61RwL" data-id="194:208"></div>
+            <div class="rectangle-115-C61RwL" onclick="Lib.autoanim_redirect('%2A,home%23calculadora,,,', event)"
+                onmouseover="" data-id="202:227"></div>
+            <div class="hacer-clic-1-C61RwL" data-id="202:228"></div>
+            <div class="vaca-4-1-C61RwL" data-id="204:354"></div>
+            <div class="presupuesto-1-C61RwL" data-id="204:355"></div>
+            <div class="ganancia-1-C61RwL" data-id="204:359"></div>
+            <div class="beneficios-1-C61RwL" data-id="204:360"></div>
+            <div class="ganancia-financiera-1-C61RwL" data-id="204:361"></div>
+            <div class="genetico-1-C61RwL" data-id="206:362"></div>
+            <div class="productividad-1-C61RwL" data-id="206:363"></div>
+            <div class="quieres-saber-cuando-C61RwL" data-id="759:4580"></div>
+            <div class="group-23-C61RwL" data-id="218:942">
+                <div class="group-3-2eLxbt" data-id="218:943">
+                    <div class="rectangle-1-DrQDey" data-id="218:944"></div>
+                    <div class="download-DrQDey" data-id="218:945">Download</div>
+                </div>
+                <div class="group-7-2eLxbt" data-id="218:946">
+                    <div class="rectangle-1-pCXjR7" data-id="218:947"></div>
+                    <div class="edit-pCXjR7" data-id="218:948">Edit</div>
+                </div>
+            </div>
+            <div class="group-33-C61RwL" data-id="218:949">
+                <div class="rectangle-4-uEDaR8" data-id="218:950"></div>
+                <div class="x000-uEDaR8" data-id="218:951">0.00</div>
+                <div class="costo-por-no-detectar-el-celo-uEDaR8" data-id="218:952">Costo por no detectar el celo</div>
+            </div>
+            <div class="group-35-C61RwL" data-id="218:850">
+                <div class="rectangle-3-1adRgC" data-id="218:851"></div>
+                <div class="calculadora-de-costos-1adRgC" data-id="218:852">Calculadora de costos</div>
+                <div class="group-23-1adRgC" data-id="218:853">
+                    <div class="group-3-Bmfc5y" data-id="218:854">
+                        <div class="rectangle-1-hsKNV1" data-id="218:855"></div>
+                        <div class="calculate-hsKNV1" data-id="218:856">Calculate</div>
+                    </div>
+                </div>
+                <div class="rectangle-4-1adRgC" data-id="218:860"></div>
+                <div class="group-14-1adRgC" data-id="218:861">
+                    <div class="pregunta-Cal53X" data-id="218:862">Pregunta</div>
+                    <div class="valor-cantidad-Cal53X" data-id="218:864">Valor/Cantidad</div>
+                </div>
+                <div class="cuestionario-1adRgC" data-id="218:865">Cuestionario</div>
+                <div class="group-9-1adRgC" data-id="218:866"></div>
+                <div class="group-10-1adRgC" data-id="218:880">
+                    <div class="group-4-AxIILV" data-id="218:881">
+                        <div class="rectangle-2-hyrCzl" data-id="218:882"></div>
+                        <div class="x2-cunto-es-el-costo-hyrCzl" data-id="218:883"><span class="span0-gdENx5">2.
+                            </span><span class="span1-gdENx5">¿Cuánto es el costo promedio por día de mantenimiento de
+                                una vaca?</span></div>
+                    </div>
+                    <div class="group-6-AxIILV" data-id="218:888">
+                        <div class="rectangle-2-isC5SZ" data-id="218:889"></div>
+                        <div class="eg-20-isC5SZ" data-id="218:890">Eg. 20</div>
+                    </div>
+                    <div class="group-8-AxIILV" data-id="218:891"></div>
+                </div>
+                <div class="group-11-1adRgC" data-id="218:894">
+                    <div class="group-4-2GJxGe" data-id="218:895">
+                        <div class="rectangle-2-ZlERt1" data-id="218:896"></div>
+                        <div class="x3-cunto-tiempo-pasa-ZlERt1" data-id="218:955">3. ¿Cuánto tiempo pasa desde que una
+                            vaca se monta hasta que se insemina?</div>
+                    </div>
+                    <div class="group-6-2GJxGe" data-id="218:902">
+                        <div class="rectangle-2-p5zRRw" data-id="218:903"></div>
+                        <div class="eg-20-p5zRRw" data-id="218:904">Eg. 20</div>
+                    </div>
+                    <div class="group-8-2GJxGe" data-id="218:905"></div>
+                </div>
+                <div class="group-12-1adRgC" data-id="218:908">
+                    <div class="group-4-Zs046Y" data-id="218:909">
+                        <div class="rectangle-2-i2OvHx" data-id="218:910"></div>
+                        <div class="x4-cunto-cuesta-la-in-i2OvHx" data-id="218:956">4. ¿Cuánto cuesta la inseminación
+                            artificial por vaca?</div>
+                    </div>
+                    <div class="group-6-Zs046Y" data-id="218:916">
+                        <div class="rectangle-2-eXYx0k" data-id="218:917"></div>
+                        <div class="eg-20-eXYx0k" data-id="218:918">Eg. 20</div>
+                    </div>
+                    <div class="group-8-Zs046Y" data-id="218:919"></div>
+                </div>
+                <div class="group-24-1adRgC" data-id="218:958">
+                    <div class="group-4-WxmLp5" data-id="218:959">
+                        <div class="rectangle-2-x45Aq7" data-id="218:960"></div>
+                        <div class="x6-cunto-es-el-precio-x45Aq7" data-id="218:961">6. ¿Cuánto es el precio de venta
+                            promedio por vaca?</div>
+                    </div>
+                    <div class="group-6-WxmLp5" data-id="218:962">
+                        <div class="rectangle-2-CILKU3" data-id="218:963"></div>
+                        <div class="eg-20-CILKU3" data-id="218:964">Eg. 20</div>
+                    </div>
+                    <div class="group-8-WxmLp5" data-id="218:965"></div>
+                </div>
+                <div class="group-27-1adRgC" data-id="218:980">
+                    <div class="group-4-zY8Ftv" data-id="218:981">
+                        <div class="rectangle-2-iH5Zzu" data-id="218:982"></div>
+                        <div class="x8-cuntas-veces-se-mo-iH5Zzu" data-id="218:983">8. ¿Cuántas veces se monta una vaca
+                            antes de ser detectada como en celo?</div>
+                    </div>
+                    <div class="group-6-zY8Ftv" data-id="218:984">
+                        <div class="rectangle-2-xJZ5TQ" data-id="218:985"></div>
+                        <div class="eg-20-xJZ5TQ" data-id="218:986">Eg. 20</div>
+                    </div>
+                    <div class="group-8-zY8Ftv" data-id="218:987"></div>
+                </div>
+                <div class="group-20-1adRgC" data-id="218:922">
+                    <div class="group-4-OE91Tt" data-id="218:923">
+                        <div class="rectangle-2-1yBMyr" data-id="218:924"></div>
+                        <div class="x5-cunto-tiempo-pasa-1yBMyr" data-id="218:957">5.¿Cuánto tiempo pasa desde la
+                            concepción hasta que la vaca está lista para ser vendida?</div>
+                    </div>
+                    <div class="group-6-OE91Tt" data-id="218:930">
+                        <div class="rectangle-2-9ASc6x" data-id="218:931"></div>
+                        <div class="eg-20-9ASc6x" data-id="218:932">Eg. 20</div>
+                    </div>
+                    <div class="group-8-OE91Tt" data-id="218:933"></div>
+                </div>
+                <div class="group-25-1adRgC" data-id="218:968">
+                    <div class="group-4-qvQ7eA" data-id="218:969">
+                        <div class="rectangle-2-CIjF7d" data-id="218:970"></div>
+                        <div class="x7-cunto-tiempo-pasa-CIjF7d" data-id="218:971">7. ¿Cuánto tiempo pasa desde que una
+                            vaca se monta hasta que es detectada como en celo?</div>
+                    </div>
+                    <div class="group-6-qvQ7eA" data-id="218:972">
+                        <div class="rectangle-2-C6cIHz" data-id="218:973"></div>
+                        <div class="eg-20-C6cIHz" data-id="218:974">Eg. 20</div>
+                    </div>
+                    <div class="group-8-qvQ7eA" data-id="218:975"></div>
+                </div>
+                <div class="group-28-1adRgC" data-id="218:990">
+                    <div class="group-4-ezToCN" data-id="218:991">
+                        <div class="rectangle-2-i45rNN" data-id="218:992"></div>
+                        <div class="x9-cuntas-veces-se-mo-i45rNN" data-id="218:993">9. ¿Cuántas veces se monta una vaca
+                            antes de concebir?</div>
+                    </div>
+                    <div class="group-6-ezToCN" data-id="218:994">
+                        <div class="rectangle-2-Vm3nkN" data-id="218:995"></div>
+                        <div class="eg-20-Vm3nkN" data-id="218:996">Eg. 20</div>
+                    </div>
+                    <div class="group-8-ezToCN" data-id="218:997"></div>
+                </div>
+                <div class="group-16-1adRgC" data-id="218:936">
+                    <div class="plus-circle-1-Ihkaak" data-id="218:937"></div>
+                </div>
+                <div class="group-26-1adRgC" data-id="218:978">
+                    <div class="plus-circle-1-avYU83" data-id="218:979"></div>
+                </div>
+                <div class="group-29-1adRgC" data-id="218:1000">
+                    <div class="plus-circle-1-VAQ4wR" data-id="218:1001"></div>
+                </div>
+            </div>
+            <div class="rectangle-120-C61RwL"
+                onclick="Lib.autoanim_redirect('%2A,home%23como-empezar,,ease-out,300.00001192092896', event)"
+                onmouseover="" data-id="204:348"></div>
+            <div class="saltar-2-C61RwL" data-id="204:349"></div>
+            <div class="volver-C61RwL" data-id="204:350">Volver</div>
+            <div class="paso-6-5-1-C61RwL" data-id="748:3254"></div>
+            <div class="paso-6-6-1-C61RwL" data-id="1100:5412"></div>
+            <div class="esteban-gomez-C61RwL" data-id="758:4548">Esteban Gomez</div>
+            <div class="nino-1-C61RwL" data-id="758:4549"></div>
         </div>
-    </footer>
-
-    
-    
-
-    
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-
-                    });
-                });
-            }
-
-        });
-    </script>
+    </div>
+    <script src="launchpad-js/launchpad-banner.js" async></script>
+    <script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script>
 </body>
 
 </html>
