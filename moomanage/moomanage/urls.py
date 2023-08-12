@@ -20,7 +20,7 @@ from core.views import frontpage,about,servicios,empezar
 
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     # path('about/',about,name='about'),
     # path('servicios/',servicios,name='servicios'),
     # path('empezar/',empezar,name='empezar'),

@@ -25,10 +25,6 @@ SECRET_KEY = 'django-insecure-#jff7$4x4%%4k)skc_=^zsdmtx1#ph%8i!2cw%s927kqk3h*wz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["snoopbrain.pythonanywhere.com"]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')
-
-STATICFILES_DIRS=[BASE_DIR / "static",]
 
 
 
@@ -121,6 +117,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+ALLOWED_HOSTS = []
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')
+
+STATICFILES_DIRS=[BASE_DIR / "static",]
 
 
 # Default primary key field type
