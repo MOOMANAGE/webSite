@@ -2373,6 +2373,26 @@ input:focus {
   top: 54px;
   width: 12px;
 }
+.servicios-JINcdj {
+  --z-index: 2;
+  background-color: transparent;
+  color: #040404;
+  cursor: pointer;
+  font-family: 'Oswald', Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 416px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 42px;
+  width: auto;
+}
 
 .home .servicios-JINcdj {
   --z-index: 2;
@@ -5809,6 +5829,9 @@ input:focus {
   text-align: left;
   top: 855px;
   width: 654px;
+}
+.home .la-deteccin-temprana-mzXdH9{
+  overflow: hidden;
 }
 
 .como-empezar .la-deteccin-temprana-mzXdH9 {
